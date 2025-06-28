@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Canvas from "./Canvas";
-import CanvasToolBar from "./CanvasToolBar";
+import Canvas from './Canvas';
+import CanvasToolBar from './CanvasToolBar';
 
 const EditorContainer = () => {
     const [color, setColor] = useState("#000");
@@ -8,8 +8,8 @@ const EditorContainer = () => {
 
     return (
         <div>
-            <Canvas color={color} tool={tool}/>
-            <CanvasToolBar color={color} setColor={setColor} tool={tool} setTool={setTool}/>
+            <CanvasToolBar color={color} setColor={setColor} tool={tool} setTool={setTool} />
+            <Canvas color={color} tool={tool} />
         </div>
     );
 };
